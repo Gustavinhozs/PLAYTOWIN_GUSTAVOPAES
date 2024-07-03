@@ -1,0 +1,16 @@
+<h1>achievements</h1>
+
+<a href="/jogos/{{jogo.id}}/novaConquista">Cadastre a Conquista</a>
+<table border="1">
+  <tr>
+    <th>Titulo</th>
+    <th>Descrição</th>
+  </tr>
+  {{#each achievements}}
+    <tr>
+      <td>{{this.titulo}}</td>
+      <td>{{this.descricao}}</td>
+    </tr>
+    
+  {{/each}}
+</table>

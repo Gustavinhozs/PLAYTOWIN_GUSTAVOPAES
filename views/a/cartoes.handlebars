@@ -1,0 +1,16 @@
+<h1>Cartões</h1>
+
+<a href="/usuarios/{{usuario.id}}/novoCartao">Cadastre o Cartão</a>
+<table border="1">
+  <tr>
+    <th>Número</th>
+    <th>Nome</th>
+  </tr>
+  {{#each cartoes}}
+    <tr>
+      <td>{{this.numero}}</td>
+      <td>{{this.nome}}</td>
+    </tr>
+    
+  {{/each}}
+</table>

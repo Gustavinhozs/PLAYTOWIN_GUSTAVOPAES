@@ -1,0 +1,25 @@
+<h1> Cadastre o Cartão</h1>
+<form action="/usuarios/{{usuario.id}}/novoCartao" method="post">
+
+  <div>
+    <label for="Number">Número</label>
+    <input
+      type="text"
+      maxlength="16"
+      minlength="16"
+      id="Number"
+      name="Number"
+    />
+  </div>
+  <div>
+    <label for="Name">Nome</label>
+    <input type="text" id="Name" name="Name"   maxlength="100" minlength="10" />
+  </div>
+  <div>
+    <label for="codSeguranca">CVV</label>
+    <input type="text" id="codSeguranca" name="codSeguranca" maxlength="3" minlength="3" />
+  </div>
+
+  <input type="submit" value="Cadastrar" />
+
+</form>
